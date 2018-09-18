@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+<android.support.v7.widget.CardView
+    android:layout_height="340dp"
+    android:layout_width="match_parent"
+    android:layout_weight="5"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="10dp"
+    >
+
+
+
+    <RelativeLayout
+        android:id="@+id/rel_back"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_gravity="left"
+        android:gravity="center_vertical"
+        android:paddingLeft="60dp"
+        android:background="@drawable/gradient"
+        >
+
+        <TextView
+            android:id="@+id/loc_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Please grant permissions
+Press    ⋮    to update Location"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:shadowColor="#000"
+            android:shadowDx="-4"
+            android:shadowDy="4"
+            android:shadowRadius="0.01"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <TextView
+            android:id="@+id/condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loc_name"
+            android:text="--"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:shadowColor="#000"
+            android:shadowDx="-4"
+            android:shadowDy="4"
+            android:shadowRadius="0.01"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/condition"
+            android:text="--"
+            android:textSize="100sp"
+            android:textColor="#fff"
+            android:shadowColor="#000"
+            android:shadowDx="-4"
+            android:shadowDy="4"
+            android:shadowRadius="1"
+            android:fontFamily="sans-serif-condensed"/>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+    <ListView
+        android:id="@+id/listy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:divider="@null"></ListView>
+
+
+</LinearLayout>
